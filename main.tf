@@ -8,7 +8,7 @@ provider "proxmox" {
 resource "proxmox_vm_qemu" "example" {
   name        = "terraform-vm"
   target_node = var.pm_node
-  clone       = "ubuntu-2204-cloudinit-template"
+  clone       = var.pm_clone_name
 
   cores       = 2
   sockets     = 1
