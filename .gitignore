@@ -1,0 +1,17 @@
+# Local Terraform state
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Terraform plan output
+*.tfplan
+
+# .terraform directory (plugin & module cache)
+.terraform/
+
+# Override config (often contains local/test credentials)
+terraform.override.tf
+override.tf
+*.override.tf
